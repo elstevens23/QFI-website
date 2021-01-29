@@ -1,0 +1,280 @@
+@import './app/css/style.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+$mainColor: #0046AD;
+
+.cookiealert {
+  height: 50px;
+  position: fixed;
+}
+
+.navbar {
+  display: block;
+}
+
+.navbarBanner {
+  background-color: $mainColor;
+}
+
+.navbar-brand img {
+  height: 75px;
+  padding-left: 40px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+  color: #f4743b;
+}
+
+.arrowDown {
+  display: flex;
+  justify-content: center;
+}
+
+.homepageCarousel {
+  padding-bottom: 20px;
+}
+
+.carousel-inner img {
+  height: 600px;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+}
+
+.aboutPositioning {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+.pageTitle {
+  padding: 20px 0 20px 40px;
+  display: block;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #f4743b;
+  }
+}
+
+#aboutQfi {
+  margin: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutTitle {
+  padding: 10px 0 10px 40px;
+  text-decoration: underline;
+  text-decoration-color: #f4743b;
+  font-weight: bold;
+}
+
+.aboutDescription {
+  width: 700px;
+  display: block;
+  right: 0;
+  padding: 10px 0 10px 40px;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.col {
+  align-self: center;
+}
+
+.aboutImage img {
+  height: 400px;
+  padding-right: 30px;
+}
+
+.col .aboutImage {
+  display: flex;
+  align-self: flex-end;
+}
+
+.contactFooter {
+  padding: 20px 0 20px 0;
+  background-color: #E8E7E7;
+}
+
+.contactFooter .col {
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+//.borderCol {
+//  border-left: 1px solid black;
+//  border-right: 1px solid black;
+//}
+
+.contactTitles h4 {
+  text-decoration: underline;
+  text-decoration-color: #f4743b;
+  font-weight: bold;
+  text-align: center;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.blackLogo img {
+  height: 75px;
+  padding: 20px;
+}
+
+.companyDescription {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-size: 0.6rem;
+    width: 200px;
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+.sectionList {
+
+  li {
+    list-style-type: none;
+  }
+  p, a {
+    text-decoration: none;
+    color: #212327;
+  }
+}
+
+.corporateAddress, .englishAddress {
+  display: flex;
+  justify-content: center;
+}
+
+.corporateAddress p, .englishAddress p {
+  width: 200px;
+  font-size: 0.8rem;
+}
+
+.contactInfo h6 {
+  display: block;
+}
+
+.productsGallery {
+  padding: 0 50px 20px 50px;
+}
+
+.productsGallery .col-lg-4 {
+  padding-bottom: 30px;
+}
+
+.figure-caption {
+  font-size: 1rem;
+}
+
+.applicationsSummaries {
+  padding: 50px 100px 50px 100px;
+}
+
+.application1 {
+  padding-bottom: 100px;
+
+  h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  p {
+    width: 800px;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+.application2 {
+  display: block;
+  padding-bottom: 100px;
+
+  h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  p {
+    width: 700px;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+.appTitle2, .appDesc2, .readMoreButton2 {
+  text-align: right;
+  margin: 0;
+}
+
+.contactSubheaders {
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #f4743b;
+    }
+    h6 {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #f4743b;
+      padding-bottom: 50px;
+    }
+}
+
+.orangeLine {
+  stroke: #f4743b;
+  stroke-width: 10;
+}
+
+.contactPhone img {
+  height: 20px;
+}
+
+.contactEmail img {
+  height: 20px;
+}
+
+.contactAddress img {
+  height: 20px;
+}
