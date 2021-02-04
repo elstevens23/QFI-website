@@ -11,19 +11,35 @@
   src: url(./app/fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
-body {
-  padding-bottom: 100px;
+.microscopeImage {
+  position: relative;
+  img {
+    height: 900px;
+    width: 100%;
+    z-index: 0;
+  }
 }
 
-.microscopeImage img {
-  height: 900px;
-  width: 100%;
-  z-index: 0;
+.header-summary h2 {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 20;
+  text-align: left;
+  line-height: 2;
+  font-weight: bold;
 }
 
-.navbar {
+.qfi {
+  position: absolute;
+  z-index: 20;
+  top: 350px;
+  left: 100px;
+}
+
+section .navbar {
   z-index: 10;
   background: none;
+  padding: 0;
 }
 
 .navbar-brand .navbar-left .logo img {
@@ -127,6 +143,10 @@ body {
 
 .about-img img {
   height: 500px; // need to change this to make it responsive
+}
+
+.contact-section {
+  padding-bottom: 100px;
 }
 
 .contact-title h1 {
@@ -265,4 +285,9 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.contact-footer {
+  padding: 100px;
+  background-color: #BCB8B8;
 }
