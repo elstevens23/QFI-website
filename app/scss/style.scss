@@ -53,8 +53,9 @@ section .navbar {
 
 .title h1 {
   padding: 100px 0 20px 0;
-  font-family: boldFont, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .short-desc {
@@ -151,9 +152,10 @@ section .navbar {
 
 .contact-title h1 {
   padding: 100px 0 50px 0;
-  font-family: boldFont, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 3.5rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .contact .info-box {
