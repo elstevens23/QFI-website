@@ -372,3 +372,40 @@ section .navbar {
     text-decoration: none;
   }
 }
+
+.applications {
+  color: #FFFFFF;
+  padding: 50px 0 50px 0;
+  width: 100%;
+}
+
+.applications-grid {
+  text-align: center;
+}
+
+.red-applications-box {
+  background-color: #AB0606;
+  padding: 30px;
+  text-align: left;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.blue-applications-box {
+  background-color: #0046AD;
+  padding: 30px;
+  text-align: right;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.applications-img img {
+  width: 100%;
+}
+
+.no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
