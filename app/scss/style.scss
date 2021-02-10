@@ -334,7 +334,6 @@ section .navbar {
 .menu-footer h6 {
   color: #FFFFFF;
   text-decoration: underline #FFFFFF;
-
 }
 
 .products-image {
@@ -356,5 +355,20 @@ section .navbar {
     color: #FFFFFF;
     font-size: 4.5rem;
     font-weight: bold;
+  }
+}
+
+.products-gallery {
+  padding: 100px;
+}
+
+.thumbnail {
+  padding: 10px;
+}
+
+.caption {
+  text-align: center;
+  p {
+    text-decoration: none;
   }
 }
