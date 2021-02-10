@@ -11,7 +11,12 @@
   src: url(./app/fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
-.microscopeImage {
+@font-face {
+  font-family: WideLatin;
+  src: url(./app/fonts/wide-latin/Wide-Latin-Regular.ttf);
+}
+
+.microscope-image {
   position: relative;
   img {
     height: 900px;
@@ -289,7 +294,67 @@ section .navbar {
   }
 }
 
-.contact-footer {
-  padding: 100px;
-  background-color: #BCB8B8;
+.footer-section {
+  padding: 50px;
+  background-color: #AB0606;
+}
+
+.footer-content {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.qfi-title {
+  font-size: 2rem;
+  font-family: WideLatin, sans-serif; // why does this not work?
+}
+
+.social-icons img {
+  padding: 10px;
+}
+
+.corporate-hq {
+  padding: 5px;
+  h4 {
+    padding-top: 50px;
+  }
+  h6 {
+    font-weight: bold;
+  }
+  p {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.phone-email-footer {
+  padding-top: 20px;
+}
+
+.menu-footer h6 {
+  color: #FFFFFF;
+  text-decoration: underline #FFFFFF;
+
+}
+
+.products-image {
+  position: relative;
+  img {
+    width: 100%;
+    z-index: 0;
+    height: 700px;
+  }
+}
+
+.products-title {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    color: #FFFFFF;
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
 }
