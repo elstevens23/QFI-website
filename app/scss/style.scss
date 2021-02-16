@@ -495,23 +495,25 @@ section .navbar {
 
 .red-applications-box {
   background-color: #AB0606;
-  padding: 100px 100px 0 100px !important;
+  padding: 100px 100px 50px 50px !important;
   width: 100%;
   text-align: left;
   line-height: 2.5;
   h3 {
     font-weight: bold;
+    padding-bottom: 20px;
   }
 }
 
 .blue-applications-box {
   background-color: #0046AD;
-  padding: 100px 100px 0 50px !important;
+  padding: 100px 50px 50px 100px !important;
   width: 100%;
   text-align: right;
   line-height: 2.5;
   h3 {
     font-weight: bold;
+    padding-bottom: 20px;
   }
 }
 
