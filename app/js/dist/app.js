@@ -21,5 +21,3 @@ function ukMap() {
         map: map
     });
 }
-
-
