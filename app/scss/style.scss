@@ -624,13 +624,28 @@
   border-radius: 50%;
 }
 
-.contact-maps {
+section .contact-maps {
   background-color: #E5E5E5;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .address {
   background-color: #AB0606;
   color: #FFFFFF;
+}
+
+.corporate-hq-map {
+  .col-8 {
+    padding: 0;
+  }
+}
+
+.no-gutters {
+  border-bottom: 5px solid #AB0606;
 }
 
 .hq-address {

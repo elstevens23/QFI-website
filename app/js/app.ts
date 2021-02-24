@@ -25,6 +25,7 @@ window.addEventListener('scroll', e => {
     document.querySelector('nav').classList.toggle('scrolled')
 })
 
+
 // document.querySelector(document).ready(function(){
 //     var $window = document.querySelector(window);
 //     document.querySelector('section[data-type="background"]').each(function(){
@@ -61,6 +62,8 @@ window.addEventListener('scroll', e => {
 //         }
 //     })
 // })
+
+
 
 // $(document).ready(function(){
 //     var $window = $(window);
