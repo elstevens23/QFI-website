@@ -22,7 +22,11 @@ function initMap():void {
 }
 
 window.addEventListener('scroll', e => {
-    document.querySelector('nav').classList.toggle('scrolled')
+    if (window.scrollY > window.innerHeight) {
+        document.querySelector('#header').classList.add('scrolled')
+    } else {
+        document.querySelector('#header').classList.remove('scrolled')
+    }
 })
 
 
