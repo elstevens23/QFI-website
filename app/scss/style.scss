@@ -1,6 +1,6 @@
-@import './app/css/style.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url(./app/fonts/Wide-Latin-Regular/Wide-Latin-Regular.ttf);
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -12,8 +12,7 @@
 }
 
 @font-face {
-  font-family: WideLatin;
-  src: url(./app/fonts/wide-latin/Wide-Latin-Regular.ttf);
+  font-family: wideLatin;
 }
 
 .microscope-image {
@@ -37,7 +36,7 @@
 .qfi {
   position: absolute;
   z-index: 20;
-  top: 350px;
+  top: 250px; // this is not responsive
   left: 100px;
 }
 
@@ -131,7 +130,8 @@
 
 .services-section {
   text-align: center;
-  background-color: #C2C2C2;
+  color: #050842;
+  background-color: #E6EDF5;
 }
 
 .services-container {
@@ -192,7 +192,8 @@
 
 .products-section {
   text-align: center;
-  background-color: #BCB8B8;
+  background-color: #E6EDF5;
+  color: #050842;
 }
 
 .products-carousel {
@@ -204,8 +205,9 @@
 }
 
 .about-section {
-  background-color: #C2C2C2;
   padding-bottom: 50px;
+  background-color: #E6EDF5;
+  color: #050842;
 }
 
 .about-title {
@@ -231,6 +233,8 @@
 
 .contact-section {
   padding: 100px 0 150px 0;
+  background-color: #E6EDF5;
+  color: #050842;
 }
 
 .contact-title h1 {
@@ -246,6 +250,7 @@
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+  background-color: #FFFFFF;
 }
 
 .contact .info-box i {
@@ -268,9 +273,13 @@
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.email-form {
+  background-color: #FFFFFF;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
+}
+
+.contact .php-email-form {
+  padding: 10px;
 }
 
 .contact .php-email-form .validate {
@@ -399,9 +408,8 @@
   padding: 5px;
 }
 
-.qfi-title {
-  font-size: 2rem;
-  font-family: WideLatin, sans-serif; // why does this not work?
+.qfi-title img {
+  height: 50px;
   padding: 5px;
 }
 
@@ -444,6 +452,7 @@
 ------------------------------------------------------------------------------------*/
 
 .services-overview .row {
+  background-color: #e6edf5;
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
@@ -513,6 +522,7 @@
 .services-title {
   padding: 20px;
   text-align: center;
+  background-color: #e6edf5;
   h3 {
     color: #a9a9a9;
     font-size: 2.5rem;
@@ -521,6 +531,7 @@
   h1 {
     font-size: 3.5rem;
     font-weight: bold;
+    color: #050842;
   }
 }
 
@@ -541,22 +552,25 @@
   }
 }
 
-.header-title {
-  position: absolute;
+.products-title {
+  padding: 50px 0 20px 0;
   text-align: center;
-  z-index: 20;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  h1 {
-    color: #FFFFFF;
-    font-size: 4.5rem;
+  background-color: #e6edf5;
+  h3 {
+    color: #a9a9a9;
+    font-size: 2.5rem;
     font-weight: bold;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #050842;
   }
 }
 
 .products-gallery {
-  padding: 100px;
+  padding: 50px 100px 100px 100px;
+  background-color: #e6edf5;
 }
 
 .thumbnail {
@@ -581,15 +595,17 @@
   width: 900px; // need to change this to make it responsive
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 0 50px 0;
-
+  padding: 20px 0 20px 0;
   p {
     font-size: 1.7rem;
+    color: #050842;
   }
 }
 
 .products-overview {
   text-align: center;
+  background-color: #E6EDF5;
+  color: #050842;
 }
 
 .products-categ-box {
@@ -640,7 +656,7 @@
 }
 
 /*------------------------------------------------------------------------------------
-# Applications Page
+# Individual Products Page???
 ------------------------------------------------------------------------------------*/
 
 .filled-navbar {
@@ -676,6 +692,10 @@
 /*------------------------------------------------------------------------------------
 # Applications Page
 ------------------------------------------------------------------------------------*/
+
+.applications-section {
+  background-color: #E6EDF5;
+}
 
 .applications {
   color: #FFFFFF;
@@ -746,129 +766,7 @@
 }
 
 /*------------------------------------------------------------------------------------
-# Contact Page
-------------------------------------------------------------------------------------*/
-
-#particles-js {
-  width: 100%;
-  height: 400px;
-  margin: 0 auto;
-  background-color: #0046AD;
-}
-
-.top-section {
-  background-color: #C2C2C2;
-  padding: 100px 100px 50px 100px;
-}
-
-.contact-image {
-  position: relative;
-  img {
-    width: 100%;
-    z-index: 0;
-    height: 700px;
-  }
-}
-
-.top-contact-title {
-  text-align: center;
-  h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    text-decoration: underline #0046AD;
-  }
-}
-
-.contact-grid {
-  padding: 50px;
-  width: 100%;
-  height: 400px;
-  h3 {
-    font-weight: bold;
-  }
-}
-
-.phone-grid {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  h3 {
-    font-weight: bold;
-    padding: 10px;
-  }
-}
-
-.email-grid {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  h3 {
-    font-weight: bold;
-    padding: 10px;
-  }
-}
-
-.contact-phone-icon, .contact-email-icon {
-  display: flex;
-  justify-content: center;
-  background-color: #AB0606;
-  width: 130px;
-  height: 130px;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-section .contact-maps {
-  background-color: #E5E5E5;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.address {
-  background-color: #AB0606;
-  color: #FFFFFF;
-}
-
-.corporate-hq-map {
-  .col-8 {
-    padding: 0;
-  }
-}
-
-.no-gutters {
-  border-top: 10px solid #AB0606;
-}
-
-.hq-address {
-  font-size: 2rem;
-  padding: 30px;
-  font-weight: bold;
-  p {
-    text-align: right;
-  }
-}
-
-.uk-address {
-  text-align: left;
-  font-size: 2rem;
-  padding: 30px;
-  font-weight: bold;
-}
-
-/* Set the size of the div element that contains the map */
-#cali-map, #uk-map {
-  height: 400px;
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
-}
-
-/*------------------------------------------------------------------------------------
-# Applications Page
+# Individual Applications Page???
 ------------------------------------------------------------------------------------*/
 
 .filled-navbar {
@@ -902,75 +800,19 @@ section .contact-maps {
 }
 
 /*------------------------------------------------------------------------------------
-# Applications Page
+# Support Page
 ------------------------------------------------------------------------------------*/
 
-.applications {
-  color: #FFFFFF;
-  width: 100%;
-}
-
-.applications-grid {
-  text-align: center;
-}
-
-.container .container-fluid .applications-grid {
-  margin: 0;
-}
-
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  margin-left: 0 !important;
-  margin-right: 0!important;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.red-applications-box {
-  background-color: #AB0606;
-  padding: 100px 100px 50px 50px !important;
-  width: 100%;
-  text-align: left;
-  line-height: 2.5;
-  h3 {
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-}
-
-.blue-applications-box {
-  background-color: #0046AD;
-  padding: 100px 50px 50px 100px !important;
-  width: 100%;
-  text-align: right;
-  line-height: 2.5;
-  h3 {
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-}
-
-.applications-img {
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.read-more {
-  display: inline-block; /* keeps container wrapped tight to content */
-  white-space: nowrap; /* text lines will collapse without this */
-  border-radius: 10%;
-  p {
-    text-decoration: none;
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
     color: #FFFFFF;
+    font-size: 4.5rem;
     font-weight: bold;
   }
-}
-
-.no-padding {
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 /*------------------------------------------------------------------------------------
@@ -985,8 +827,8 @@ section .contact-maps {
 }
 
 .top-section {
-  background-color: #C2C2C2;
-  padding: 100px 100px 50px 100px;
+  background-color: #E6EDF5;
+  padding: 100px 100px 0 100px;
 }
 
 .contact-image {
@@ -1040,8 +882,8 @@ section .contact-maps {
   display: flex;
   justify-content: center;
   background-color: #AB0606;
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   padding: 20px;
   margin: 0 auto;
   border-radius: 50%;
@@ -1061,15 +903,26 @@ section .contact-maps {
   color: #FFFFFF;
 }
 
-.corporate-hq-map {
-  .col-8 {
-    padding: 0;
-  }
+.modal-dialog {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
-.no-gutters {
-  border-top: 10px solid #AB0606;
+.offices-map {
+  max-width: 400px;
+  height: 100%;
 }
+
+//.corporate-hq-map {
+//  .col-8 {
+//    padding: 0;
+//  }
+//}
+
+//.no-gutters {
+//  border-top: 10px solid #AB0606;
+//}
 
 .hq-address {
   font-size: 2rem;
@@ -1093,4 +946,47 @@ section .contact-maps {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
+}
+
+.location-overview {
+  padding: 150px;
+  background-color: #E6EDF5;
+}
+
+.location-info {
+  border-radius: 20px;
+  background-color: #0046AD;
+  color: #FFFFFF;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.skyline-img img {
+  height: 150px;
+}
+
+.see-location-btn {
+  display: inline;
+  button {
+    border: 2px solid #FFFFFF;
+    width: fit-content;
+  }
+}
+
+.left-side-address {
+  text-align: left;
+}
+
+.right-side-address {
+  text-align: left;
+  padding-left: 100px !important;
+}
+
+.border-right {
+  border-right: 2px solid #FFFFFF;
 }

@@ -9,27 +9,18 @@
     <meta name="description" content="QFI designs and manufactures advanced failure analysis microscope systems and temperature measurement microscope systems for the semiconductor industry.">
     <link rel="canonical" href="http://quantumfocus.com/" /> <!-- can search this up but this isn't effective until the new site has this domain -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./app/images/qfi-logo.png">
+    <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <script src="./app/js/dist/app.js"></script>
 </head>
 <body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-<section class="products-header">
-
-    <div class="products-image">
-        <img src="app/images/products-heading.jpg" alt="Microscope">
-        <div class="header-title">
-            <h1>Products</h1>
-        </div>
-    </div>
-
-</section>
-
 <section class="navbar">
 
-    <header id="header" class="fixed-top">
+    <header id="header" class="filled-nav">
         <div class="container-fluid">
 
             <div class="row justify-content-center">
@@ -75,129 +66,38 @@
 
 </section>
 
-<section class="products-overview-section">
+<section class="products-header">
 
-    <div class="products-gallery">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Infrascope</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Thermal Boundary Resistance</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Failure Analysis</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Temperature Mapping Microscope</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Systems</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="#">
-                        <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
-                        <div class="caption">
-                            <p>Film Stack</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="products-title">
+        <h1>Products</h1>
     </div>
 
 </section>
 
-<section class="products-spinning-card">
+<section class="products-overview">
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-5 col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="content products-image">
-                                <img src="./app/images/products-placeholder.jpg" alt="Microscope">
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Infrascope</h4>
-                                    <p class="text-center">InfraScopeTM Temperature Mapping Microscope addresses an important aspect of managing device reliability.<br><br>
-                                        True temperature mapping supplies data critical to the reliability and thermal management concerns of semiconductor engineers working in Design, Packaging, Reliability, Microwave, RF, MEMs, and other areas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
+    <div class="products-short-desc">
+        <p>Quantum Focus Instruments Corporation (QFI) designs and manufactures advanced failure analysis microscope systems
+            and temperature measurement microscope systems for the semiconductor industry.
+        </p>
+    </div>
+    <div class="products-categ-container">
+        <div class="container">
+            <div class="row justify-content-around">
+            <a class="col-4" href="products-fa.html" style="display: block; text-decoration: none">
+                    <div class="products-categ-box">
+                        <img src="./app/icons/graph-down.svg" alt="graph down icon">
+                        <h3>Failure Analysis</h3>
+                    </div>
+            </a>
+            <a class="col-4" href="products-tc.html" style="display: block; text-decoration: none">
+                <div class="products-categ-box">
+                    <img src="./app/icons/thermometer.svg" alt="thermometer icon">
+                    <h3>Thermal Characterization</h3>
                 </div>
+            </a>
             </div>
-
-            <div class="col-5 col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="content products-image">
-                                <img src="./app/images/products-placeholder.jpg" alt="Microscope">
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Thermal Boundary Resistance</h4>
-                                    <p class="text-center">InfraScopeTM Temperature Mapping Microscope addresses an important aspect of managing device reliability.<br><br>
-                                        True temperature mapping supplies data critical to the reliability and thermal management concerns of semiconductor engineers working in Design, Packaging, Reliability, Microwave, RF, MEMs, and other areas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div>
-            </div>
-
         </div>
-
     </div>
 
 </section>
@@ -208,7 +108,7 @@
         <div class="row">
             <div class="col-sm">
                 <div class="qfi-title">
-                    <h1>QFI</h1>
+                    <img src="./app/images/QFI-logo.png" alt="QFI logo">
                 </div>
             </div>
             <div class="col-sm">
@@ -246,9 +146,10 @@
             </div>
             <div class="col-sm menu-footer">
                 <a href="products.html"><h6>Products</h6></a>
-                <a href="#"><h6>Applications</h6></a>
-                <a href="#"><h6>Support</h6></a>
-                <a href="#"><h6>Contact</h6></a>
+                <a href="services.html"><h6>Services</h6></a>
+                <a href="applications.html"><h6>Applications</h6></a>
+                <a href="support.html"><h6>Support</h6></a>
+                <a href="contact.html"><h6>Contact</h6></a>
             </div>
         </div>
     </div>
