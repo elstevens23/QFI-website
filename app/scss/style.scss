@@ -10,9 +10,9 @@
   src: url(./app/fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
-@font-face {
-  font-family: wideLatin;
-}
+//@font-face {
+//  font-family: wideLatin;
+//}
 
 .microscope-image {
   position: relative;
@@ -134,12 +134,12 @@
 }
 
 .services-container {
-  padding: 50px 0 100px 0;
+  padding: 20px 0 100px 0;
 }
 
 .services-box {
-  min-width: 350px;
-  min-height: 350px;
+  min-width: 400px;
+  max-height: 350px;
   background-color: #AB0606;
   border-radius: 10px;
   box-sizing: unset;
@@ -193,15 +193,25 @@
   text-align: center;
   background-color: #E6EDF5;
   color: #050842;
+  height: 300px;
+}
+
+.short-desc {
+  padding-bottom: 50px;
 }
 
 .products-carousel {
-  padding: 0 400px 100px 400px;
+  padding: 0 300px 100px 300px;
 }
 
-.carousel-inner img {
-  max-height: 600px;
+.carousel-item img {
+  max-height: 500px;
 }
+
+//.carousel-control-prev-icon, .carousel-control-next-icon {
+//  width: 3.5rem !important;
+//  height: 3.5rem !important;
+//}
 
 .about-section {
   padding-bottom: 50px;
@@ -216,10 +226,6 @@
 
 .about-summary {
   text-align: center;
-  width: 900px; // need to change this to make it responsive
-  display: flex;
-  justify-content: center;
-
   p {
     font-size: 1.5rem;
     line-height: 2;
@@ -380,6 +386,21 @@
   }
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+.bi-chevron-up img {
+  z-index: 10;
+  height: 30px;
+  color: #050842;
+}
+
 /*------------------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------------------*/
@@ -397,19 +418,19 @@
 }
 
 .social-icons {
-  padding-top: 10px;
+  padding-top: 15px;
   a {
-    padding: 5px;
+    padding: 10px;
   }
 }
 
 .menu-footer a {
-  padding: 5px;
+  padding: 10px;
 }
 
 .qfi-title img {
-  height: 50px;
-  padding: 5px;
+  max-height: 60px;
+  padding: 10px;
 }
 
 .social-icons img {
@@ -424,9 +445,9 @@
 }
 
 .corporate-hq {
-  padding: 5px;
+  padding: 20px;
   h4 {
-    padding-top: 50px;
+    padding-top: 60px;
   }
   h6 {
     font-weight: bold;
@@ -462,7 +483,7 @@
   img {
     border-radius: 20px;
     margin-right: -5%;
-    height: 90%;
+    max-height: 90%;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -519,7 +540,7 @@
 }
 
 .services-title {
-  padding: 20px;
+  padding: 50px 0 20px 0;
   text-align: center;
   background-color: #e6edf5;
   h3 {

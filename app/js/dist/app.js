@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var jquery_1 = require("jquery");
 function caliMap() {
     var caliOptions = {
         zoom: 11,
@@ -29,4 +32,20 @@ window.addEventListener('scroll', function (e) {
     else {
         document.querySelector('#header').classList.remove('scrolled');
     }
+});
+jquery_1.default(document).trigger('ready', function () {
+    jquery_1.default(window).trigger('scroll', function () {
+        if (jquery_1.default(this).scrollTop() > 50) {
+            jquery_1.default('#back-to-top').fadeIn();
+        }
+        else {
+            jquery_1.default('#back-to-top').fadeOut();
+        }
+    });
+    jquery_1.default('#back-to-top').trigger('click', function () {
+        jquery_1.default('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
 });
