@@ -4,10 +4,456 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>QFI | Quantum Focus Instruments Corporation</title>
+    <link rel="stylesheet" type="text/css" href="./app/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/style.css">
+    <script type="text/javascript" src="./app/js/dist/app.js"></script>
     <meta name="description" content="QFI designs and manufactures advanced failure analysis microscope systems and temperature measurement microscope systems for the semiconductor industry.">
     <link rel="canonical" href="http://quantumfocus.com/" /> <!-- can search this up but this isn't effective until the new site has this domain -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 </head>
 <body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<section class="microscope-header">
+
+    <div class="microscope-image">
+        <img src="app/images/gradient-microscope.png" alt="Microscope">
+        <div class="container header-summary">
+            <div class="row">
+                <div class="col-sm-4 qfi">
+                    <h2>QFI are leaders in semiconductor failure analysis and thermal characterization / metrology.</h2>
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="navbar">
+
+    <header id="header" class="fixed-top">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                    <a class="navbar-brand navbar-left logo" href="index.html"><img src="./app/images/qfi-logo.png" alt="QFI logo"></a>
+
+                    <nav class="navbar navbar-expand-lg navbar-fixed-top nav-menu d-none d-lg-block">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="products.html">Products</a>
+                                    </li>
+                                    <div class="dropdown">
+                                        <a href="applications.html" class="dropbtn nav-link">Applications</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">Thermal Measurements</a>
+                                            <a href="#">Failure Analysis</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="support.html">Support</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+</section>
+
+<section class="services-section">
+
+    <div class="title">
+        <h1>Test Services</h1>
+    </div>
+    <div class="short-desc">
+        <p>QFI has maintained an innovative approach to microscopy systems for failure analysis and temperature measurement.</p>
+    </div>
+    <div class="services-container">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <a class="col-5" href="services-fa.html" style="display: block; text-decoration: none">
+                    <div class="services-box">
+                        <img src="./app/icons/graph-down.svg" alt="graph down icon">
+                        <h3>Failure Analysis</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation. </p>
+                        <p><strong>Learn More ></strong></p>
+                    </div>
+                </a>
+                <a class="col-5" href="services-tc.html" style="display: block; text-decoration: none">
+                    <div class="services-box">
+                        <img src="./app/icons/thermometer.svg" alt="empty thermometer icon">
+                        <h3>Thermal Characterization</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <p><strong>Learn More ></strong></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--<section class="products-section">-->
+
+<!--    <div class="title">-->
+<!--        <h1>Products</h1>-->
+<!--    </div>-->
+<!--    <div class="short-desc">-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>-->
+<!--    </div>-->
+<!--    <div class="products-carousel">-->
+<!--        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">-->
+<!--            <ol class="carousel-indicators">-->
+<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>-->
+<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>-->
+<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>-->
+<!--            </ol>-->
+<!--            <div class="carousel-inner">-->
+<!--                <div class="carousel-item active">-->
+<!--                    <img src="./app/images/carousel1.jpg" class="d-block w-100" alt="...">-->
+<!--                    <div class="carousel-caption d-none d-md-block">-->
+<!--                        <h5>QFI MWIR</h5>-->
+<!--                        <p>We design and build our own MWIR lenses - Our 20x lens offer a spatial resolution better than 2 microns</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                    <img src="./app/images/carousel2.jpg" class="d-block w-100" alt="...">-->
+<!--                    <div class="carousel-caption d-none d-md-block">-->
+<!--                        <h5>Second slide label</h5>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                    <img src="./app/images/carousel3.jpg" class="d-block w-100" alt="...">-->
+<!--                    <div class="carousel-caption d-none d-md-block">-->
+<!--                        <h5>Third slide label</h5>-->
+<!--                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Previous</span>-->
+<!--            </a>-->
+<!--            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Next</span>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</section>-->
+
+
+<section class="products-section">
+
+    <div class="title">
+        <h1>Products</h1>
+    </div>
+    <div class="short-desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+    </div>
+
+    <div class="products-carousel" id="customize_wrapper">
+        <div class="customize" id="customize">
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel1.jpg" alt="Carousel Slide 1" width="600" height="400">
+                </div>
+                <p>
+                    Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+                </p>
+            </div>
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel2.jpg" alt="Carousel Slide 2" width="600" height="400">
+                </div>
+                <p>
+                    Corrupti, libero minima nihil expedita officiis? Quo.
+                </p>
+            </div>
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel3.jpg" alt="Carousel Slide 3" width="600" height="400">
+                </div>
+                <p>
+                    Alias rem, ab impedit recusandae repellat tempore.
+                </p>
+            </div>
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel1.jpg" alt="Carousel Slide 4" width="600" height="400">
+                </div>
+                <p>
+                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+                </p>
+            </div>
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel2.jpg" alt="Carousel Slide 5" width="600" height="400">
+                </div>
+                <p>
+                    Nisi harum earum consectetur laudantium iusto, laboriosam.
+                </p>
+            </div>
+            <div>
+                <div class="carousel-image">
+                    <img src="app/images/carousel3.jpg" alt="Carousel Slide 6" width="600" height="400">
+                </div>
+                <p>
+                    Nisi harum earum consectetur laudantium iusto, laboriosam.
+                </p>
+            </div>
+        </div>
+        <div class="customize-tools">
+            <ul class="thumbnails" id="customize-thumbnails" aria-label="Carousel Pagination">
+                <li data-nav="0" aria-label="Carousel Page 1 (Current Slide)" aria-controls="customize">
+                    <img src="app/images/carousel1.jpg" alt="Carousel Slide 1" width="60" height="40">
+                </li>
+                <li data-nav="1" tabindex="-1" aria-label="Carousel Page 2" aria-controls="customize">
+                    <img src="app/images/carousel2.jpg" alt="Carousel Slide 2" width="60" height="40">
+                </li>
+                <li data-nav="2" tabindex="-1" aria-label="Carousel Page 3" aria-controls="customize">
+                    <img src="app/images/carousel3.jpg" alt="Carousel Slide 3" width="60" height="40">
+                </li>
+                <li data-nav="3" tabindex="-1" aria-label="Carousel Page 4" aria-controls="customize">
+                    <img src="app/images/carousel1.jpg" alt="Carousel Slide 4" width="60" height="40">
+                </li>
+                <li data-nav="4" tabindex="-1" aria-label="Carousel Page 5" aria-controls="customize">
+                    <img src="app/images/carousel2.jpg" alt="Carousel Slide 5" width="60" height="40">
+                </li>
+                <li data-nav="5" tabindex="-1" aria-label="Carousel Page 6" aria-controls="customize">
+                    <img src="app/images/carousel3.jpg" alt="Carousel Slide 6" width="60" height="40">
+                </li>
+            </ul>
+            <ul class="controls" id="customize-controls">
+                <li class="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </li>
+                <li class="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module">
+
+        const slider = tns({
+            container: "#customize",
+            items: 3,
+            slideBy: 1,
+            "controlsContainer": "#customize-controls",
+            "navContainer": "#customize-thumbnails",
+            "navAsThumbnails": true,
+            "swipeAngle": false,
+            "speed": 300,
+            "mouseDrag": true,
+            "gutter": 30
+        });
+    </script>
+
+</section>
+
+
+<section class="about-section">
+
+    <div class="title about-title">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm my-auto about-summary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <div class="col-sm about-img">
+                <img src="./app/images/about-team.svg" alt="Undraw About Team svg">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact" class="contact contact-section">
+    <div class="container" data-aos="fade-up">
+
+    <div class="contact-title section-title">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="info-box">
+                        <img src="./app/images/location.svg" alt="filled location svg">
+                        <h3>Corporate HQ Address</h3>
+                        <p>2385 La Mirada Drive, Vista, California 92081 USA</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box mt-4">
+                        <img src="./app/images/envelope-fill.svg" alt="filled email svg">
+                        <h3>Email Us</h3>
+                        <p>corp@quantumfocus.com<br>support@quantumfocus.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box mt-4">
+                        <img src="./app/images/telephone-fill.svg" alt="filled phone svg">
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55<br>+1 6678 25445 41</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0 email-form">
+            <form action="contact-form.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validate"></div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message alert alert-success" role="alert">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+<section class="scroll-btn">
+
+    <div class="scroll-to-top">
+        <a id="back-to-top" href="#" class="btn btn-light back-to-top" role="button">
+            <i class="bi bi-chevron-up"></i>
+            <img src="./app/images/black-chevron-up.png" alt="Black Chevron Up">
+        </a>
+    </div>
+
+</section>
+
+<section class="footer-section">
+
+    <div class="container footer-content">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div class="contact-us-footer corporate-hq-title">
+                    <h4>Contact Us</h4>
+                </div>
+            </div>
+            <div class="col-sm">
+                <h4>Menu</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="col-sm">
+                    <div class="qfi-title">
+                        <img src="./app/images/QFI-logo.png" alt="QFI logo">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://twitter.com/quantumfocus_" target="_blank"><img src="./app/icons/twitter.svg" alt="twitter icon"></a>
+                    <a href="#" target="_blank"><img src="./app/icons/linkedin.svg" alt="linkedin icon"></a>
+                    <a href="#" target="_blank"><img src="./app/icons/instagram.svg" alt="instagram icon"></a>
+                    <a href="#" target="_blank"><img src="./app/icons/facebook.svg" alt="facebook icon"></a>
+                </div>
+                <div class="footer-copyright">
+                    <p><strong>&copy; 2021 Quantum Focus Instruments</strong><br>all rights reserved</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="contact-us-footer">
+                    <div class="corporate-hq">
+                        <h6>Corporate HQ:</h6>
+                        <p>2385 La Mirada Drive, Vista, California, 92081 USA</p>
+                    </div>
+                    <div class="phone-email-footer">
+                        <p><strong>Tel: </strong>+1 222 333-4444</p>
+                        <p><strong>Email: </strong>quantumfocus@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm menu-footer">
+                <a href="products.html"><h6>Products</h6></a>
+                <a href="services.html"><h6>Services</h6></a>
+                <a href="applications.html"><h6>Applications</h6></a>
+                <a href="support.html"><h6>Support</h6></a>
+                <a href="contact.html"><h6>Contact</h6></a>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>

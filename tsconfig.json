@@ -4,7 +4,9 @@
   ],
   "compilerOptions": {
     "removeComments": true,
+    "types": ["google.maps"],
     "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
     "target": "es5",
     "lib": [
       "es2015",
@@ -14,3 +16,4 @@
     ]
   }
 }
+
