@@ -57,7 +57,7 @@ $(document).trigger('ready', function(){
 
 // tiny slider carousel
 
-import {tns} from "/node_modules/tiny-slider/src/tiny-slider.js";
+// import {tns} from "/node_modules/tiny-slider/src/tiny-slider.js";
 //
 // var slider = tns({
 //     container: '.my-slider',

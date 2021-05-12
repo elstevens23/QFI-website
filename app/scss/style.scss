@@ -193,19 +193,73 @@
   text-align: center;
   background-color: #E6EDF5;
   color: #050842;
-  height: 300px;
+  max-height: 1000px;
 }
 
 .short-desc {
   padding-bottom: 50px;
 }
 
-.products-carousel {
-  padding: 0 300px 100px 300px;
+//.products-carousel {
+//  padding: 0 300px 100px 300px;
+//}
+
+.my-slider {
 }
 
-.carousel-item img {
-  max-height: 500px;
+.carousel-item {
+  img {
+    max-height: 500px;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.tns-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66CCFF;
+  border-radius: 3px;
+  border: 0;
+}
+
+.tns-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+
+.tns-nav > .tns-nav-active {
+  background: #999;
+}
+
+.tns-outer button {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66CCFF;
+  border-radius: 3px;
+  border: 0;
 }
 
 //.carousel-control-prev-icon, .carousel-control-next-icon {

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 </head>
 <body>
@@ -178,8 +178,6 @@
 <!--</section>-->
 
 
-
-
 <section class="products-section">
 
     <div class="title">
@@ -188,51 +186,48 @@
     <div class="short-desc">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
     </div>
-    <div class="my-slider">
+    <div class="my-slider" id="base">
         <div class="carousel-item">
-            <div class="carousel-image">
-                <img src="app/images/carousel1.jpg" alt="Carousel Slide 1">
-                <p>banana</p>
-            </div>
+            <img src="app/images/carousel1.jpg" alt="Carousel Slide 1">
+            <p>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</p>
         </div>
         <div class="carousel-item">
-            <div class="carousel-image">
-                <img src="app/images/carousel2.jpg" alt="Carousel Slide 1">
-            </div>
+            <img src="app/images/carousel2.jpg" alt="Carousel Slide 2">
+            <p>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</p>
         </div>
         <div class="carousel-item">
-            <div class="carousel-image">
-                <img src="app/images/carousel3.jpg" alt="Carousel Slide 1">
-            </div>
+            <img src="app/images/carousel3.jpg" alt="Carousel Slide 3">
+            <p>Alias rem, ab impedit recusandae repellat tempore.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="app/images/carousel1.jpg" alt="Carousel Slide 4">
+            <p>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="app/images/carousel2.jpg" alt="Carousel Slide 5">
+            <p>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="app/images/carousel3.jpg" alt="Carousel Slide 6">
+            <p>Alias rem, ab impedit recusandae repellat tempore.</p>
         </div>
     </div>
 
     <script type="module">
-        import {tns} from 'tiny-slider';
 
         const slider = tns({
             container: ".my-slider",
-            container: "#customise",
             items: 3,
             slideBy: 'page',
-            autoplay: true,
-            "controlsContainer": "#customize-controls",
-            "navContainer": "#customize-thumbnails",
             "navAsThumbnails": true,
-            "autoplayTimeout": 1000,
-            "autoplayButton": "#customize-toggle",
             "swipeAngle": false,
-            "speed": 400
+            "speed": 300,
+            "mouseDrag": true,
+            "gutter": 10
         });
     </script>
 
 </section>
-
-
-
-
-
-
 
 
 <section class="about-section">
