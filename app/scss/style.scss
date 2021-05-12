@@ -193,27 +193,57 @@
   text-align: center;
   background-color: #E6EDF5;
   color: #050842;
-  max-height: 1000px;
+  max-height: 1200px;
 }
 
 .short-desc {
   padding-bottom: 50px;
 }
 
-//.products-carousel {
-//  padding: 0 300px 100px 300px;
-//}
+/////////////// Tiny Slider Carousel \\\\\\\\\\\\\\\
 
-.my-slider {
-}
-
-.carousel-item {
-  img {
-    max-height: 500px;
-  }
+.products-carousel {
+  padding: 50px;
   p {
+    margin: 0;
+    padding: 0.8em 0;
+    line-height: 1.4;
+    font-weight: 300;
     text-align: center;
   }
+}
+
+.carousel-image img {
+  max-width: 100%;
+}
+
+.carousel-image img:not(.tns-lazy-img), .lazyload img {
+  height: auto;
+}
+
+.autoWidth img {
+  max-width: none;
+  width: 100%;
+}
+
+.img {
+  font-size: 100px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+}
+
+.img a {
+  display: block;
+  padding: 22% 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  left: -10000px;
+  opacity: 0;
 }
 
 .tns-controls {
@@ -262,10 +292,54 @@
   border: 0;
 }
 
-//.carousel-control-prev-icon, .carousel-control-next-icon {
-//  width: 3.5rem !important;
-//  height: 3.5rem !important;
-//}
+.customize-tools {
+  position: relative;
+}
+
+.thumbnails {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.thumbnails li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 7px;
+  width: 50px;
+}
+
+.thumbnails .tns-nav-active {
+  background: none;
+}
+
+.thumbnails img:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.thumbnails img {
+  vertical-align: bottom;
+  height: auto;
+  max-height: 50px;
+}
+
+.prev, .next {
+  list-style-type: none;
+}
+
+/////////////// END - Tiny Slider Carousel \\\\\\\\\\\\\\\
 
 .about-section {
   padding-bottom: 50px;
@@ -451,12 +525,13 @@
 
 .bi-chevron-up img {
   z-index: 10;
-  height: 30px;
+  height: auto;
+  max-width: 100%;
   color: #050842;
 }
 
 /*------------------------------------------------------------------------------------
-# Footer
+  # Footer
 ------------------------------------------------------------------------------------*/
 
 .footer-section {
@@ -992,16 +1067,6 @@ section .contact-maps {
   max-width: 400px;
   height: 100%;
 }
-
-//.corporate-hq-map {
-//  .col-8 {
-//    padding: 0;
-//  }
-//}
-
-//.no-gutters {
-//  border-top: 10px solid #AB0606;
-//}
 
 .hq-address {
   font-size: 2rem;
