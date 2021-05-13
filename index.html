@@ -59,18 +59,25 @@
                                     <li class="nav-item active">
                                         <a class="nav-link" href="index.html">Home</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="services.html">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="products.html">Products</a>
-                                    </li>
+                                    <div class="dropdown">
+                                        <div class="dropbtn nav-link">Services</div>
+                                        <div class="dropdown-content">
+                                            <a href="services-fa.html">Failure Analysis</a>
+                                            <a href="services-tc.html">Thermal Characterization</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <div class="dropbtn nav-link">Products</div>
+                                        <div class="dropdown-content">
+                                            <a href="products-fa.html">Failure Analysis</a>
+                                            <a href="products-tc.html">Thermal Characterization</a>
+                                        </div>
+                                    </div>
                                     <div class="dropdown">
                                         <a href="applications.html" class="dropbtn nav-link">Applications</a>
                                         <div class="dropdown-content">
-                                            <a href="#">Thermal Measurements</a>
                                             <a href="#">Failure Analysis</a>
-                                            <a href="#">Link 3</a>
+                                            <a href="#">Thermal Characterization</a>
                                         </div>
                                     </div>
                                     <li class="nav-item">
@@ -125,58 +132,6 @@
     </div>
 
 </section>
-
-<!--<section class="products-section">-->
-
-<!--    <div class="title">-->
-<!--        <h1>Products</h1>-->
-<!--    </div>-->
-<!--    <div class="short-desc">-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>-->
-<!--    </div>-->
-<!--    <div class="products-carousel">-->
-<!--        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">-->
-<!--            <ol class="carousel-indicators">-->
-<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>-->
-<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>-->
-<!--                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>-->
-<!--            </ol>-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="carousel-item active">-->
-<!--                    <img src="./app/images/carousel1.jpg" class="d-block w-100" alt="...">-->
-<!--                    <div class="carousel-caption d-none d-md-block">-->
-<!--                        <h5>QFI MWIR</h5>-->
-<!--                        <p>We design and build our own MWIR lenses - Our 20x lens offer a spatial resolution better than 2 microns</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="./app/images/carousel2.jpg" class="d-block w-100" alt="...">-->
-<!--                    <div class="carousel-caption d-none d-md-block">-->
-<!--                        <h5>Second slide label</h5>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="./app/images/carousel3.jpg" class="d-block w-100" alt="...">-->
-<!--                    <div class="carousel-caption d-none d-md-block">-->
-<!--                        <h5>Third slide label</h5>-->
-<!--                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">-->
-<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Previous</span>-->
-<!--            </a>-->
-<!--            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">-->
-<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Next</span>-->
-<!--            </a>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--</section>-->
-
 
 <section class="products-section">
 
@@ -288,7 +243,11 @@
             "swipeAngle": false,
             "speed": 300,
             "mouseDrag": true,
-            "gutter": 30
+            "gutter": 20,
+            "center": true,
+            "nav": true,
+            "navPosition": "bottom",
+            "autoWidth": true // otherwise 3 carousel slides fill the page
         });
     </script>
 
