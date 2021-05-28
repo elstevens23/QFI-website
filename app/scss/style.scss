@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 * {
-  font-family: 'Montserrat', sans-serif;
-}
-
-@font-face {
-  font-family: boldFont;
-  src: url(./app/fonts/Montserrat/Montserrat-Bold.ttf);
+  font-family: 'Lato', sans-serif;
 }
 
 //@font-face {
@@ -15,28 +11,36 @@
 //}
 
 .microscope-image {
-  position: relative;
+  height: 100vh;
   img {
-    height: 100vh;
     min-width: 100%;
     z-index: 0;
+    height: 100vh;
+    object-fit: cover;
   }
 }
 
-.header-summary h2 {
-  position: absolute;
-  color: #FFFFFF;
-  z-index: 20;
-  text-align: left;
-  line-height: 2;
-  font-weight: bold;
+.overview {
+  height: 100%;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .qfi-summary {
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    h2 {
+      color: #FFFFFF;
+      z-index: 20;
+      line-height: 2;
+      padding-left: 20%;
+    }
+  }
 }
 
-.qfi {
-  position: absolute;
-  z-index: 20;
-  top: 250px; // this is not responsive
-  left: 100px;
+.summary-positioning {
+  height: 100%;
 }
 
 .navbar {
@@ -68,7 +72,31 @@
 
 .navbar-nav .nav-link {
   color: #FFFFFF;
-  font-weight: bolder;
+  margin: 0.7rem!important;
+  padding: 0!important;
+  width: fit-content;
+}
+
+.nav-item a.left {
+  position: relative;
+  padding-bottom: 1px!important;
+}
+
+// can't work out how to nest these next two selectors into the selector above
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 .dropbtn {
@@ -86,7 +114,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 100px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -94,7 +122,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px;
   text-decoration: none;
   display: block;
 }
@@ -111,7 +139,7 @@
 
 .title h1 {
   padding: 100px 0 20px 0;
-  font-family: Montserrat, sans-serif;
+  //font-family: Montserrat, sans-serif;
   font-size: 3.5rem;
   font-weight: bold;
 }
@@ -131,6 +159,9 @@
   text-align: center;
   color: #050842;
   background-color: #E6EDF5;
+  .short-desc p {
+    padding-bottom: 30px;
+  }
 }
 
 .services-container {
@@ -140,7 +171,7 @@
 .services-box {
   min-width: 400px;
   max-height: 350px;
-  background-color: #AB0606;
+  background-color: #98CCE1; // #88aadb;
   border-radius: 10px;
   box-sizing: unset;
   display: flex;
@@ -157,14 +188,14 @@
   }
 
   h3 {
-    color: #FFFFFF;
+    color: #050842;
     font-weight: bolder;
-    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
     padding-bottom: 30px;
   }
 
   p {
-    color: #FFFFFF;
+    color: #050842;
   }
 }
 
@@ -194,10 +225,15 @@
   background-color: #E6EDF5;
   color: #050842;
   max-height: 1200px;
-}
-
-.short-desc {
-  padding-bottom: 30px;
+  .short-desc p {
+    margin: 0.5rem!important;
+  }
+  .learn-more p {
+    margin-bottom: 0!important;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /////////////// Tiny Slider Carousel \\\\\\\\\\\\\\\
@@ -379,7 +415,7 @@
 
 .contact-title h1 {
   padding: 0 0 50px 0;
-  font-family: Montserrat, sans-serif;
+  //font-family: Montserrat, sans-serif;
   font-size: 3.5rem;
   text-align: center;
   font-weight: bold;
@@ -543,7 +579,7 @@
 
 .footer-section {
   padding: 50px;
-  background-color: #AB0606;
+  background-color: #717E90;
   display: flex;
   justify-content: center;
 }
@@ -780,7 +816,7 @@
   h3 {
     color: #FFFFFF;
     font-weight: bolder;
-    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
   }
 
   img {
@@ -809,6 +845,11 @@
 
 .products-categ-box:hover:after {
   opacity: 1;
+}
+
+.products-space {
+  height: 1500px;
+  width: 100%;
 }
 
 /*------------------------------------------------------------------------------------
@@ -1002,8 +1043,10 @@
   }
 }
 
-.top-contact-title {
+.contact-title {
   text-align: center;
+  padding-bottom: 50px;
+  color: #050842;
   h2 {
     font-weight: bold;
     font-size: 3rem;
@@ -1011,11 +1054,12 @@
 }
 
 .contact-grid {
-  padding: 60px;
+  padding: 0 60px 60px 60px;
   width: 100%;
   height: 400px;
   h3 {
     font-weight: bold;
+    color: #050842;
   }
 }
 
@@ -1026,6 +1070,7 @@
   h3 {
     font-weight: bold;
     padding: 10px;
+    color: #050842;
   }
 }
 
@@ -1059,6 +1104,10 @@ section .contact-maps {
   max-width: 100%;
 }
 
+.contact-phone h4, .contact-email h4 {
+  color: #050842;
+}
+
 .address {
   background-color: #AB0606;
   color: #FFFFFF;
@@ -1070,27 +1119,6 @@ section .contact-maps {
   justify-content: center;
 }
 
-.offices-map {
-  max-width: 400px;
-  height: 100%;
-}
-
-.hq-address {
-  font-size: 2rem;
-  padding: 30px;
-  font-weight: bold;
-  p {
-    text-align: right;
-  }
-}
-
-.uk-address {
-  text-align: left;
-  font-size: 2rem;
-  padding: 30px;
-  font-weight: bold;
-}
-
 /* Set the size of the div element that contains the map */
 #cali-map, #uk-map {
   height: 400px;
@@ -1100,14 +1128,13 @@ section .contact-maps {
 }
 
 .location-overview {
-  padding: 150px;
-  background-color: #E6EDF5;
+  padding: 100px;
+  background-color: #d5e2f0;
 }
 
 .location-info {
   border-radius: 20px;
-  background-color: #0046AD;
-  color: #FFFFFF;
+  color: #050842;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -1135,9 +1162,10 @@ section .contact-maps {
 
 .right-side-address {
   text-align: left;
-  padding-left: 100px !important;
+  padding-left: 200px !important;
 }
 
 .border-right {
-  border-right: 2px solid #FFFFFF;
+  border-right: 2px solid #050842;
+  height: 250px;
 }
