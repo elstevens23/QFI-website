@@ -25,7 +25,7 @@ function ukMap() {
     });
 }
 ukMap();
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', function () {
     if (window.scrollY > window.innerHeight) {
         document.querySelector('#header').classList.add('scrolled');
     }

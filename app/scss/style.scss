@@ -113,25 +113,33 @@ a.left:hover:before {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #E6EDF5;
   min-width: 100px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: #717E90;
   padding: 10px;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  color: #050842;
+  margin-left: 5px!important;
+  transition: all 0.3s ease-in-out;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-hover:hover .dropdown-toggle::after {
+  border-bottom: 0.3em solid;
+  border-top: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*------------------------------------------------------------------------------------
 # HomePage
@@ -356,6 +364,7 @@ a.left:hover:before {
 
 .prev, .next {
   list-style-type: none;
+  //height: fit-content;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -596,17 +605,16 @@ a.left:hover:before {
   }
 }
 
-.menu-footer a {
-  padding: 10px;
-}
-
 .qfi-title img {
   max-height: 60px;
   padding: 10px;
 }
 
-.social-icons img {
-  padding: 10px;
+.social-icons a, .social-icons path {
+  color: #FFFFFF;
+  :hover {
+    color: #98CCE1;
+  }
 }
 
 .footer-copyright {
@@ -637,6 +645,22 @@ a.left:hover:before {
 .menu-footer h6 {
   color: #FFFFFF;
   text-decoration: underline #FFFFFF;
+}
+
+.menu-footer a {
+  padding: 2px;
+  :hover {
+    color: #98CCE1;
+    text-decoration: underline #98CCE1;
+  }
+}
+
+.left-links a {
+  text-align: right;
+}
+
+.right-links a {
+  text-align: left;
 }
 
 /*------------------------------------------------------------------------------------

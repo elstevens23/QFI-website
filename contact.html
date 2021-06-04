@@ -55,24 +55,29 @@
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">Home</a>
+                                        <a class="nav-link left" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link left" href="about.html">About QFI</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="products.html">Products</a>
+                                        <a class="nav-link left" href="services.html">Services</a>
                                     </li>
-                                    <div class="dropdown">
-                                        <a href="applications.html" class="dropbtn nav-link">Applications</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link left" href="products.html">Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link left" href="applications.html">Applications</a>
+                                    </li>
+                                    <div class="dropdown dropdown-hover dropdown-hover-menu">
+                                        <a class="nav-link dropdown-toggle" href="support.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
                                         <div class="dropdown-content">
-                                            <a href="#">Thermal Measurements</a>
-                                            <a href="#">Failure Analysis</a>
-                                            <a href="#">Link 3</a>
+                                            <a href="#">FAQs</a>
+                                            <a href="#">Link 2</a>
                                         </div>
                                     </div>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="support.html">Support</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
+                                        <a class="nav-link left" href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,7 +94,7 @@
 <section class="top-talk">
 
     <div class="top-section">
-        <div class="top-contact-title">
+        <div class="contact-title">
             <h2>We love to talk</h2>
         </div>
         <div class="container contact-grid">
@@ -116,8 +121,15 @@
 
 <section class="location-overview">
 
+    <div class="contact-title">
+        <h2>Come and visit!</h2>
+        <h4>Don't live in the US? We have 3 other offices in different countries!</h4>
+    </div>
+
+    <!-- USA office -->
+
     <div class="row location-info">
-        <div class="col-4 left-side-address border-right">
+        <div class="col-5 left-side-address border-right">
             <div class="skyline-img">
                 <img src="./app/images/skyline.png" alt="Skyline Silhouette">
             </div>
@@ -148,7 +160,7 @@
             </div>
         </div>
 
-        <div class="col-4 right-side-address">
+        <div class="col-5 right-side-address">
             <div class="location-title">
                 <h3>C A L I F O R N I A</h3>
                 <br>
@@ -161,8 +173,10 @@
         </div>
     </div>
 
+    <!-- UK office -->
+
     <div class="row location-info">
-        <div class="col-4 left-side-address border-right">
+        <div class="col-5 left-side-address border-right">
             <div class="skyline-img">
                 <img src="./app/images/skyline.png" alt="Skyline Silhouette">
             </div>
@@ -193,7 +207,7 @@
             </div>
         </div>
 
-        <div class="col-4 right-side-address">
+        <div class="col-5 right-side-address">
             <div class="location-title">
                 <h3>B R I S T O L</h3>
                 <br>
@@ -202,6 +216,100 @@
                 <p><strong>Address: </strong>North Gate, Filton Road, Stoke Gifford, Bristol, BS34 8RB, UK</p>
                 <p><strong>Phone: </strong>+1 222 333-4444</p>
                 <p><strong>Email: </strong>uk@quantumfocus.com</p>
+            </div>
+        </div>
+    </div>
+
+<!-- China office -->
+
+    <div class="row location-info">
+        <div class="col-5 left-side-address border-right">
+            <div class="skyline-img">
+                <img src="./app/images/skyline.png" alt="Skyline Silhouette">
+            </div>
+            <div class="see-location-btn">
+                <a><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See location</button></a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-8 no-gutters offices-map">
+                                <div id="uk-map"></div>
+                                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKwg_cROPaXyWsd7XXBQZxY4gv8CoyQI&callback=ukMap&libraries=&v=weekly" async></script>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5 right-side-address">
+            <div class="location-title">
+                <h3>S H E N Z H E N</h3>
+                <br>
+            </div>
+            <div class="address-info">
+                <p><strong>Address: </strong> --- </p>
+                <p><strong>Phone: </strong>+86 131 2222 3333</p>
+                <p><strong>Email: </strong>china@quantumfocus.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Philippines office -->
+
+    <div class="row location-info">
+        <div class="col-5 left-side-address border-right">
+            <div class="skyline-img">
+                <img src="./app/images/skyline.png" alt="Skyline Silhouette">
+            </div>
+            <div class="see-location-btn">
+                <a><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See location</button></a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-8 no-gutters offices-map">
+                                <div id="uk-map"></div>
+                                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKwg_cROPaXyWsd7XXBQZxY4gv8CoyQI&callback=ukMap&libraries=&v=weekly" async></script>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5 right-side-address">
+            <div class="location-title">
+                <h3>M A N I L A</h3>
+                <br>
+            </div>
+            <div class="address-info">
+                <p><strong>Address: </strong> --- </p>
+                <p><strong>Phone: </strong>+63 111 2222 333</p>
+                <p><strong>Email: </strong>philippines@quantumfocus.com</p>
             </div>
         </div>
     </div>
@@ -244,13 +352,13 @@
 
 <section class="footer-section">
 
+<!--    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js/"></script>-->
+
+<!--    <div id="particles-js">-->
+
     <div class="container footer-content">
         <div class="row">
-            <div class="col-sm">
-                <div class="qfi-title">
-                    <img src="./app/images/QFI-logo.png" alt="QFI logo">
-                </div>
-            </div>
+            <div class="col-sm"></div>
             <div class="col-sm">
                 <div class="contact-us-footer corporate-hq-title">
                     <h4>Contact Us</h4>
@@ -262,6 +370,11 @@
         </div>
         <div class="row">
             <div class="col-sm">
+                <div class="col-sm">
+                    <div class="qfi-title">
+                        <img src="./app/images/QFI-logo.png" alt="QFI logo">
+                    </div>
+                </div>
                 <div class="social-icons">
                     <a href="https://twitter.com/quantumfocus_" target="_blank"><img src="./app/icons/twitter.svg" alt="twitter icon"></a>
                     <a href="#" target="_blank"><img src="./app/icons/linkedin.svg" alt="linkedin icon"></a>
@@ -285,6 +398,7 @@
                 </div>
             </div>
             <div class="col-sm menu-footer">
+                <a href="about.html"><h6>About QFI</h6></a>
                 <a href="products.html"><h6>Products</h6></a>
                 <a href="services.html"><h6>Services</h6></a>
                 <a href="applications.html"><h6>Applications</h6></a>
@@ -293,6 +407,13 @@
             </div>
         </div>
     </div>
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        particlesJS.load('particles-js', 'particles.json', function() {-->
+<!--            console.log('callback - particles.js config loaded');-->
+<!--        });-->
+<!--    </script>-->
 
 </section>
 

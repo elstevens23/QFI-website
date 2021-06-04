@@ -28,15 +28,17 @@ function ukMap():void {
 
 ukMap();
 
-// scroll to top button
+// navbar colour on scroll
 
-window.addEventListener('scroll', e => {
+window.addEventListener('scroll', function(){
     if (window.scrollY > window.innerHeight) {
         document.querySelector('#header').classList.add('scrolled')
     } else {
         document.querySelector('#header').classList.remove('scrolled')
     }
 })
+
+// scroll-to-top button
 
 $(document).trigger('ready', function(){
     $(window).trigger('scroll', function () {
