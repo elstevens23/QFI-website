@@ -33,6 +33,19 @@ window.addEventListener('scroll', function () {
         document.querySelector('#header').classList.remove('scrolled');
     }
 });
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 jquery_1.default(document).trigger('ready', function () {
     jquery_1.default(window).trigger('scroll', function () {
         if (jquery_1.default(this).scrollTop() > 50) {
@@ -49,3 +62,33 @@ jquery_1.default(document).trigger('ready', function () {
         return false;
     });
 });
+function validateForm() {
+    var name = document.querySelector('#name').value;
+    if (name == "") {
+        document.querySelector('.status').innerHTML = "Name cannot be empty";
+        return false;
+    }
+    var email = document.querySelector('#email').value;
+    if (email == "") {
+        document.querySelector('.status').innerHTML = "Email cannot be empty";
+        return false;
+    }
+    else {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(email)) {
+            document.querySelector('.status').innerHTML = "Email format invalid";
+            return false;
+        }
+    }
+    var subject = document.querySelector('#subject').value;
+    if (subject == "") {
+        document.querySelector('.status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    var message = document.querySelector('#message').value;
+    if (message == "") {
+        document.querySelector('.status').innerHTML = "Message cannot be empty";
+        return false;
+    }
+    document.getElementById('status').innerHTML = "Sending...";
+}

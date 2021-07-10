@@ -12,10 +12,11 @@
     <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
     <script src="./app/js/dist/app.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
 
 <section class="navbar">
 
-    <header id="header" class="fixed-top">
+    <header id="header" class="filled-nav">
         <div class="container-fluid">
 
             <div class="row justify-content-center">
@@ -74,29 +75,195 @@
 
 </section>
 
-<section class="product-info-section">
+<section class="what-are-we-section">
 
-    <div class="product-title">
-        <h3>Quantum Focus Instruments</h3>
-        <h1>Power Transistor Thermal Characterization</h1>
+    <div class="about-title">
+        <h2>About QFI</h2>
     </div>
-    <div class="product-overview">
-        <div class="product-image">
-            <img src="./app/images/infrascope-map.jpg" class="rounded float-start" alt="Infrascope Map">
+
+    <div class="container container-full about-waw">
+        <div class="row">
+            <div class="col">
+                <div class="qfi-waw-desc">
+                    <h2><strong>What are we</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="about-placeholder-img">
+                    <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                </div>
+            </div>
         </div>
-        <div class="product-desc-short">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
+    </div>
+
+</section>
+
+<section class="values-section">
+
+    <div class="about2-title">
+        <h2>Why Choose Us?</h2>
+    </div>
+
+    <div class="container container-fluid about-values">
+        <div class="row row-cols-3">
+            <div class="col heading-1">
+                <h4>Sustainability</h4>
+            </div>
+            <div class="col heading-2">
+                <h4>Innovation</h4>
+            </div>
+            <div class="col heading-3">
+                <h4>Quality</h4>
+            </div>
+        </div>
+        <div class="row row-cols-3">
+            <div class="col">
+                <div class="values-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="values-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="values-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="product-extra-info">
-        <h2>What information goes on this page?<br>Need to plan content and layout for each applications page.</h2>
+
+</section>
+
+<section class="meet-team">
+
+    <div id="gutter_wrapper">
+        <div class="about2-title">
+            <h2>Meet the Team</h2>
+        </div>
+        <div class="gutter gutter-carousel" id="slider2">
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/meet-team1.png" alt="Carousel Slide 1" width="400">
+                </div>
+                <p><strong>Georgia Page</strong></p>
+                <p>Founder & Director</p>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-2">
+                    <img src="app/images/meet-team2.png" alt="Carousel Slide 1" width="400">
+                </div>
+                <p><strong>Lauren Adams</strong></p>
+                <p>Sales Director</p>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-3">
+                    <img src="app/images/meet-team3.png" alt="Carousel Slide 1" width="400">
+                </div>
+                <p><strong>Christopher Baker</strong></p>
+                <p>Head of Development</p>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-4">
+                    <img src="app/images/meet-team4.png" alt="Carousel Slide 1" width="400">
+                </div>
+                <p><strong>Jolie Marie</strong></p>
+                <p>Junior Software Developer</p>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-5">
+                    <img src="app/images/meet-team5.png" alt="Carousel Slide 1" width="400">
+                </div>
+                <p><strong>Matt Smith</strong></p>
+                <p>Head Scientist</p>
+            </div>
+        </div>
     </div>
+
+    <script type="module">
+
+        const slider2 = tns({
+            container: "#slider2",
+            items: 3,
+            slideBy: 1,
+            "navContainer": true,
+            "swipeAngle": false,
+            "speed": 300,
+            "mouseDrag": true,
+            "gutter": 60,
+            "center": true,
+            "nav": true,
+            "navPosition": "bottom",
+            "autoWidth": true, // otherwise 3 carousel slides fill the page
+        });
+
+    </script>
+
+</section>
+
+<section class="partners-section">
+
+    <div id="gutter_wrapper2">
+        <div class="about2-title teams-title">
+            <h2>Trusted by teams at</h2>
+        </div>
+        <div class="gutter gutter-carousel2" id="slider3">
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/qfi-blue-logo.png" alt="QFI Blue logo" width="50">
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/qfi-blue-logo.png" alt="QFI Blue logo" width="50">
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/qfi-blue-logo.png" alt="QFI Blue logo" width="50">
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/qfi-blue-logo.png" alt="QFI Blue logo" width="50">
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-img img img-1">
+                    <img src="app/images/qfi-blue-logo.png" alt="QFI Blue logo" width="50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+
+        const slider3 = tns({
+            "container": "#slider3",
+            "items": 3,
+            "slideBy": 1,
+            "gutter": 30,
+            "swipeAngle": false,
+            "speed": 300,
+            "mouseDrag": true,
+            "autoWidth": true,
+            "center": true,
+            "nav": true,
+            "navPosition": "bottom",
+        });
+
+    </script>
 
 </section>
 

@@ -12,7 +12,11 @@
     <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
     <script src="./app/js/dist/app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -20,7 +24,7 @@
 
 <section class="navbar">
 
-    <header id="header" class="fixed-top">
+    <header id="header" class="filled-nav">
         <div class="container-fluid">
 
             <div class="row justify-content-center">
@@ -71,19 +75,182 @@
 
 </section>
 
-<section class="products-header">
+<section class="support-intro">
 
-    <div class="products-title">
-        <h1>Support</h1>
+    <div class="section-title">
+        <h2>Support</h2>
+    </div>
+    <div class="support-intro-desc">
+        <h4><strong>We're here to support you.</strong></h4>
+        <p>If you’re having problems with your QFI products, don’t hesitate to contact us!</p>
+        <p>The first step to fixing the problem is to consult your product manual.</p>
+        <br>
+        <p>Otherwise, please contact us from using the form below, or </p>
+    </div>
+
+    <div class="social-media-icons container">
+        <div class="row row-cols-2">
+            <div class="col d-flex justify-content-end">
+                <div class="support-phone-icon">
+                    <i class="fas fa-3x fa-phone"></i>
+                    <p>Call Us</p>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <div class="support-email-icon">
+                    <i class="fas fa-3x fa-envelope"></i>
+                    <p>Email Us</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </section>
 
-<section class="support-content">
+<section class="bottom-contact-form">
 
-    <div class="paul-planning-space"></div>
+    <div class="section-title">
+        <h2 class="text-center">Contact us</h2>
+    </div>
+    <div class="bottom-contact-form-p">
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+    </div>
+
+    <div class="contact-form row">
+
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="form-to-email.php" method="POST">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" placeholder="Your email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" placeholder="Your message" rows="4" class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left send-form">
+                <a class="btn btn-primary" onclick="validateForm();">SEND</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        <!--        <div class="col-md-3 text-center">-->
+        <!--            <ul class="list-unstyled mb-0">-->
+        <!--                <li><i class="fas fa-map-marker-alt fa-2x"></i>-->
+        <!--                    <p>San Francisco, CA 94126, USA</p>-->
+        <!--                </li>-->
+
+        <!--                <li><i class="fas fa-phone mt-4 fa-2x"></i>-->
+        <!--                    <p>+ 01 234 567 89</p>-->
+        <!--                </li>-->
+
+        <!--                <li><i class="fas fa-envelope mt-4 fa-2x"></i>-->
+        <!--                    <p>contact@mdbootstrap.com</p>-->
+        <!--                </li>-->
+        <!--            </ul>-->
+        <!--        </div>-->
+
+    </div>
 
 </section>
+
+<section class="FAQs">
+
+    <div class="section-title">
+        <h2>FAQs</h2>
+        <h6><i>Frequently Asked Questions</i></h6>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Who makes your products?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Where can I buy them?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What warranty and service do you offer to customers who buy your products?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    I'm not a company, can I still buy them?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
 <section class="footer-section">
 
@@ -107,10 +274,10 @@
                     </div>
                 </div>
                 <div class="social-icons">
-                    <a href="https://twitter.com/quantumfocus_" target="_blank"><img src="./app/icons/twitter.svg" alt="twitter icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/linkedin.svg" alt="linkedin icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/instagram.svg" alt="instagram icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/facebook.svg" alt="facebook icon"></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in icon fa-2x"></i></a>
+                    <a href="https://twitter.com/quantumfocus_" target="_blank"><i class="fab fa-twitter icon fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f icon fa-2x"></i></a>
                 </div>
                 <div class="footer-copyright">
                     <p><strong>&copy; 2021 Quantum Focus Instruments</strong><br>all rights reserved</p>
@@ -129,12 +296,20 @@
                 </div>
             </div>
             <div class="col-sm menu-footer">
-                <a href="about.html"><h6>About QFI</h6></a>
-                <a href="products.html"><h6>Products</h6></a>
-                <a href="services.html"><h6>Services</h6></a>
-                <a href="applications.html"><h6>Applications</h6></a>
-                <a href="support.html"><h6>Support</h6></a>
-                <a href="contact.html"><h6>Contact</h6></a>
+                <div class="container links-columns">
+                    <div class="row">
+                        <div class="col-sm left-links">
+                            <a href="about.html"><h6>About QFI</h6></a>
+                            <a href="products.html"><h6>Products</h6></a>
+                            <a href="support.html"><h6>Support</h6></a>
+                        </div>
+                        <div class="col-sm right-links">
+                            <a href="services.html"><h6>Services</h6></a>
+                            <a href="applications.html"><h6>Applications</h6></a>
+                            <a href="contact.html"><h6>Contact</h6></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

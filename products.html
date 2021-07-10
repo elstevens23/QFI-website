@@ -12,7 +12,9 @@
     <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
     <script src="./app/js/dist/app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 </head>
 <body>
 
@@ -20,7 +22,7 @@
 
 <section class="navbar">
 
-    <header id="header" class="fixed-top">
+    <header id="header" class="filled-nav">
         <div class="container-fluid">
 
             <div class="row justify-content-center">
@@ -71,38 +73,219 @@
 
 </section>
 
-<section class="products-header">
-
-    <div class="products-title">
-        <h1>Products</h1>
-    </div>
-
-</section>
-
 <section class="products-overview">
 
-    <div class="products-short-desc">
+    <div class="services-title">
+        <h1>Products</h1>
+    </div>
+    <div class="services-short-desc">
         <p>Quantum Focus Instruments Corporation (QFI) designs and manufactures advanced failure analysis microscope systems
             and temperature measurement microscope systems for the semiconductor industry.
         </p>
     </div>
-    <div class="products-categ-container">
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'FA')" id="defaultOpen">Failure Analysis</button>
+        <button class="tablinks" onclick="openTab(event, 'TC')">Thermal Characterization</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="FA" class="tabcontent active">
         <div class="container">
-            <div class="row justify-content-around">
-            <a class="col-4" href="products-fa.html" style="display: block; text-decoration: none">
-                    <div class="products-categ-box">
-                        <img src="./app/icons/graph-down.svg" alt="graph down icon">
-                        <h3>Failure Analysis</h3>
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="product-infrascope.html">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Infrascope</p>
+                            </div>
+                        </a>
                     </div>
-            </a>
-            <a class="col-4" href="products-tc.html" style="display: block; text-decoration: none">
-                <div class="products-categ-box">
-                    <img src="./app/icons/thermometer.svg" alt="thermometer icon">
-                    <h3>Thermal Characterization</h3>
                 </div>
-            </a>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Thermal Boundary Resistance</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Temperature Mapping Microscope</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Failure Analysis</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Systems</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Film Stack</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div id="TC" class="tabcontent">
+        <div class="container">
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="product-infrascope.html">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Infrascope</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Thermal Boundary Resistance</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Temperature Mapping Microscope</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Failure Analysis</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 products-tab-row">
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Systems</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-md-center">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="./app/images/products-placeholder.jpg" alt="Microscope" style="width:100%">
+                            <div class="caption">
+                                <p>Film Stack</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="bottom-contact-form">
+
+    <div class="section-title">
+        <h2 class="text-center">Contact us</h2>
+    </div>
+    <div class="bottom-contact-form-p">
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+    </div>
+
+    <div class="contact-form row">
+
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="form-to-email.php" method="POST">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" placeholder="Your email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" placeholder="Your message" rows="4" class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left send-form">
+                <a class="btn btn-primary" onclick="validateForm();">SEND</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
     </div>
 
 </section>
@@ -129,10 +312,10 @@
                     </div>
                 </div>
                 <div class="social-icons">
-                    <a href="https://twitter.com/quantumfocus_" target="_blank"><img src="./app/icons/twitter.svg" alt="twitter icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/linkedin.svg" alt="linkedin icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/instagram.svg" alt="instagram icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/facebook.svg" alt="facebook icon"></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in icon fa-2x"></i></a>
+                    <a href="https://twitter.com/quantumfocus_" target="_blank"><i class="fab fa-twitter icon fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f icon fa-2x"></i></a>
                 </div>
                 <div class="footer-copyright">
                     <p><strong>&copy; 2021 Quantum Focus Instruments</strong><br>all rights reserved</p>
@@ -151,12 +334,20 @@
                 </div>
             </div>
             <div class="col-sm menu-footer">
-                <a href="about.html"><h6>About QFI</h6></a>
-                <a href="products.html"><h6>Products</h6></a>
-                <a href="services.html"><h6>Services</h6></a>
-                <a href="applications.html"><h6>Applications</h6></a>
-                <a href="support.html"><h6>Support</h6></a>
-                <a href="contact.html"><h6>Contact</h6></a>
+                <div class="container links-columns">
+                    <div class="row">
+                        <div class="col-sm left-links">
+                            <a href="about.html"><h6>About QFI</h6></a>
+                            <a href="products.html"><h6>Products</h6></a>
+                            <a href="support.html"><h6>Support</h6></a>
+                        </div>
+                        <div class="col-sm right-links">
+                            <a href="services.html"><h6>Services</h6></a>
+                            <a href="applications.html"><h6>Applications</h6></a>
+                            <a href="contact.html"><h6>Contact</h6></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -164,4 +355,7 @@
 </section>
 
 </body>
+
+<script>document.getElementById("defaultOpen").click();</script>
+
 </html>

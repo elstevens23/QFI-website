@@ -12,7 +12,14 @@
     <link rel="icon" type="image/png" href="./app/images/QFI-logo-original.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
     <script src="./app/js/dist/app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+<!--    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+<!--    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
 </head>
 <body>
 
@@ -20,7 +27,7 @@
 
 <section class="navbar">
 
-    <header id="header" class="fixed-top">
+    <header id="header" class="filled-nav">
         <div class="container-fluid">
 
             <div class="row justify-content-center">
@@ -71,41 +78,256 @@
 
 </section>
 
-<section class="services-header">
+<section class="services-overview">
 
     <div class="services-title">
         <h1>Services</h1>
     </div>
-
-</section>
-
-<section class="products-overview">
-
-    <div class="products-short-desc">
+    <div class="services-short-desc">
         <p>Quantum Focus Instruments Corporation (QFI) designs and manufactures advanced failure analysis microscope systems
             and temperature measurement microscope systems for the semiconductor industry.
         </p>
     </div>
-    <div class="products-categ-container">
+
+    <div class="tab">
+        <button class="tablinks active tab1" onclick="openTab(event, 'FA')" id="defaultOpen">Failure Analysis</button>
+        <button class="tablinks tab2" onclick="openTab(event, 'TC')">Thermal Characterization</button>
+<!--        <hr />-->
+    </div>
+
+    <!-- Tab content -->
+    <div id="FA" class="tabcontent active">
         <div class="container">
-            <div class="row justify-content-around">
-            <a class="col-4" href="services-fa.html" style="display: block; text-decoration: none">
-                    <div class="products-categ-box">
-                        <img src="./app/icons/graph-down.svg" alt="graph down icon">
-                        <h3>Failure Analysis</h3>
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
                     </div>
-            </a>
-            <a class="col-4" href="services-tc.html" style="display: block; text-decoration: none">
-                <div class="products-categ-box">
-                    <img src="./app/icons/thermometer.svg" alt="thermometer icon">
-                    <h3>Thermal Characterization</h3>
                 </div>
-            </a>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>Photoemission</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>Laser Signal Injection (XIVA)</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>Thermal Hot Spot Lock-In Thermography</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="TC" class="tabcontent">
+        <div class="container">
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>IR Temperature Mapping</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>Thermal Reflectance Temperature Mapping</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-tab-row">
+                <div class="col">
+                    <div class="services-placeholder-img">
+                        <img src="app/images/carousel3.jpg" alt="microscope and lenses">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services-tab-desc">
+                        <h5><strong>Raman Point Temperature Measurement</strong></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong><a href="#">Learn More ></a></strong></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </section>
+
+<!--<section class="tab-experiment">-->
+
+<!--    <div class="tabs">-->
+<!--        <div class="tab-header">-->
+<!--            <div class="active">-->
+<!--                <i class="fa fa-code"></i> Code-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <i class="fa fa-pencil-square-o"></i> About-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <i class="fa fa-bar-chart"></i> Services-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <i class="fa fa-envelope-o"></i> Contact-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="tab-indicator"></div>-->
+<!--        <div class="tab-body">-->
+<!--            <div class="active">-->
+<!--                <h2>This is code section</h2>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque saepe commodi blanditiis fugiat nisi aliquam ratione porro quibusdam in, eveniet accusantium cumque. Dolore officia reprehenderit perferendis quod libero omnis.</p>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2>This is about section</h2>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2>This is services section</h2>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2>This is contact section</h2>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</section>-->
+
+<section class="bottom-contact-form">
+
+    <div class="section-title">
+        <h2 class="text-center">Contact us</h2>
+    </div>
+    <div class="bottom-contact-form-p">
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+    </div>
+
+    <div class="contact-form row">
+
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="form-to-email.php" method="POST">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" placeholder="Your email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" placeholder="Your message" rows="4" class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left send-form">
+                <a class="btn btn-primary" onclick="validateForm();">SEND</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+<!--        <div class="col-md-3 text-center">-->
+<!--            <ul class="list-unstyled mb-0">-->
+<!--                <li><i class="fas fa-map-marker-alt fa-2x"></i>-->
+<!--                    <p>San Francisco, CA 94126, USA</p>-->
+<!--                </li>-->
+
+<!--                <li><i class="fas fa-phone mt-4 fa-2x"></i>-->
+<!--                    <p>+ 01 234 567 89</p>-->
+<!--                </li>-->
+
+<!--                <li><i class="fas fa-envelope mt-4 fa-2x"></i>-->
+<!--                    <p>contact@mdbootstrap.com</p>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+    </div>
+
+</section>
+
+<!--<section class="tab-experiment">-->
+
+<!--    <div class="tab-container">-->
+<!--        <ul>-->
+<!--            <li class="one"><a href="#">Uno</a></li>-->
+<!--            <li class="two"><a href="#">Dos</a></li>-->
+<!--            <li class="three"><a href="#">Tres</a></li>-->
+<!--            <hr />-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--</section>-->
 
 <section class="footer-section">
 
@@ -129,10 +351,10 @@
                     </div>
                 </div>
                 <div class="social-icons">
-                    <a href="https://twitter.com/quantumfocus_" target="_blank"><img src="./app/icons/twitter.svg" alt="twitter icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/linkedin.svg" alt="linkedin icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/instagram.svg" alt="instagram icon"></a>
-                    <a href="#" target="_blank"><img src="./app/icons/facebook.svg" alt="facebook icon"></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in icon fa-2x"></i></a>
+                    <a href="https://twitter.com/quantumfocus_" target="_blank"><i class="fab fa-twitter icon fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f icon fa-2x"></i></a>
                 </div>
                 <div class="footer-copyright">
                     <p><strong>&copy; 2021 Quantum Focus Instruments</strong><br>all rights reserved</p>
@@ -151,12 +373,20 @@
                 </div>
             </div>
             <div class="col-sm menu-footer">
-                <a href="about.html"><h6>About QFI</h6></a>
-                <a href="products.html"><h6>Products</h6></a>
-                <a href="services.html"><h6>Services</h6></a>
-                <a href="applications.html"><h6>Applications</h6></a>
-                <a href="support.html"><h6>Support</h6></a>
-                <a href="contact.html"><h6>Contact</h6></a>
+                <div class="container links-columns">
+                    <div class="row">
+                        <div class="col-sm left-links">
+                            <a href="about.html"><h6>About QFI</h6></a>
+                            <a href="products.html"><h6>Products</h6></a>
+                            <a href="support.html"><h6>Support</h6></a>
+                        </div>
+                        <div class="col-sm right-links">
+                            <a href="services.html"><h6>Services</h6></a>
+                            <a href="applications.html"><h6>Applications</h6></a>
+                            <a href="contact.html"><h6>Contact</h6></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -164,4 +394,9 @@
 </section>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>document.getElementById("defaultOpen").click();</script>
+
 </html>

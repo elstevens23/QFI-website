@@ -18,6 +18,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "postcss": "^8.3.5",
+    "postcss-nested": "^5.0.5",
     "typescript": "^3.6.2"
   },
   "dependencies": {
